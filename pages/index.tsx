@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <button onClick={() => { addTodo({ name: "New" + +new Date() }) }}>Add news</button>
-      <button onClick={() => clearTodos()}>Clear todos</button>
+      <button onClick={() => clearTodos()}>Clear todos!</button>
       {todos.map(todo => <p key={todo.name}>{todo.name.toUpperCase()}</p>)}
     </div>
   )
